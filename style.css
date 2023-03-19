@@ -469,7 +469,7 @@ li span a:hover {
 
 .hero-des {
     padding-right: 60px;
-    text-align: center;
+    text-align: left;
     /* font-weight: 800; */
     letter-spacing: 1.2;
 }
