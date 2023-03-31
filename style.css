@@ -461,6 +461,14 @@ li span a:hover {
 }
 
 
+.playground {
+    position: absolute;
+    top: 140px;
+    right: 25px;
+    text-decoration: none;
+}
+
+
 .hero-tag {
     margin-top: 20vh;
     text-align: left;
