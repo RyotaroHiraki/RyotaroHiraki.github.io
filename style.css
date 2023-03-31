@@ -454,17 +454,13 @@ li span a:hover {
 
 
 .history {
-    position: absolute;
-    top: 120px;
-    right: 25px;
+    position: relative;
     text-decoration: none;
 }
 
 
 .playground {
-    position: absolute;
-    top: 140px;
-    right: 25px;
+    position: relative;
     text-decoration: none;
 }
 
