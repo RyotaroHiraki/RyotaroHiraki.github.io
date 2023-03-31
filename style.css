@@ -454,7 +454,7 @@ li span a:hover {
 
 
 .history {
-    position: sticky;
+    position: static;
     bottom: 25px;
     right: 25px;
 }
