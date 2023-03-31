@@ -453,6 +453,13 @@ li span a:hover {
 }
 
 
+.history {
+    position: sticky;
+    bottom: 25px;
+    right: 25px;
+}
+
+
 .hero-tag {
     margin-top: 20vh;
     text-align: left;
