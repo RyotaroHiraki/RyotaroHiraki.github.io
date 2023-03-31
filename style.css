@@ -455,9 +455,8 @@ li span a:hover {
 
 .history {
     position: absolute;
-    bottom: 10px;
+    top: 50px;
     right: 25px;
-    color: black;
     text-decoration: none;
 }
 
