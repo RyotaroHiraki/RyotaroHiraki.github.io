@@ -447,9 +447,14 @@ li span a:hover {
 
 
 .legal {
-    position: absolute;
+    /* position: absolute;
     bottom: 25px;
-    right: 25px;
+    right: 25px; */
+    margin-top: 10%;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 
@@ -610,7 +615,7 @@ li {
 }
 
 .social-icons {
-    margin-top: 30%;
+    margin-top: 10%;
 }
 
 .footer-full {
