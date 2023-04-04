@@ -456,12 +456,16 @@ li span a:hover {
 .history {
     position: relative;
     text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 
 .playground {
     position: relative;
     text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 
