@@ -466,6 +466,22 @@ li span a:hover {
 }
 
 
+.history a,
+.history a:hover,
+.history a:active {
+    color: #444;
+    text-decoration: none;
+}
+
+
+.playground a,
+.playground a:hover,
+.playground a:active {
+    color: #444;
+    text-decoration: none;
+}
+
+
 .playground {
     position: relative;
     text-decoration: none;
