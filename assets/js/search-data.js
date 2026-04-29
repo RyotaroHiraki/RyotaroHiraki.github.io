@@ -424,11 +424,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-obtained-b-a-in-international-and-global-studies-with-latin-honors-from-the-university-of-arkansas",
+            },},{id: "news-obtained-b-a-in-international-and-global-studies-with-latin-honors-from-the-university-of-arkansas",
           title: 'Obtained B.A. in International and Global Studies with Latin Honors from the University...',
+          description: "",
+          section: "News",},{id: "news-obtained-m-s-in-economic-analytics-from-the-university-of-arkansas",
+          title: 'Obtained M.S. in Economic Analytics from the University of Arkansas',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
