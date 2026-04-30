@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Obtained B.A. in International and Global Studies with *Latin Honors* from the University of Arkansas
+🎓 Obtained B.A. in International and Global Studies with *Latin Honors* from the University of Arkansas

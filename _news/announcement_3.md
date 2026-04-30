@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Obtained M.S. in Economic Analytics from the University of Arkansas
+🎓 Obtained M.S. in Economic Analytics from the University of Arkansas
