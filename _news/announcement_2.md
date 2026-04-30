@@ -15,10 +15,10 @@ Special thanks to Dr. Hyunseok Jung for the guidance throughout the semester.
 
 ## Overview 
 <ul>
-    <li>**Data**: ACS Public-use MicrodataArea (PUMA) 2024.</li>
-    <li>**Methods**: Two-stage Least Squares (TSLS) Estimation with distance to nearest college as an instrument.</li>
+    <li>Data: ACS Public-use MicrodataArea (PUMA) 2024.</li>
+    <li>Methods: Two-stage Least Squares (TSLS) Estimation with distance to nearest college as an instrument.</li>
     <li>Use MOSAIKS for image featurization and double selection to reduce dimensions. </li>
-<ul>
+</ul>
 
 ---
 
@@ -35,6 +35,7 @@ Special thanks to Dr. Hyunseok Jung for the guidance throughout the semester.
 <embed src="assets/pdf/capstone_poster.pdf" type="application/pdf" width="100%" height="600px">
 
 ---
+
 ### Photo Gallery
 <p align="center">
     <img src="assets/img/capstone.jpeg" width="500">
