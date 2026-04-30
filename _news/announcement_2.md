@@ -30,14 +30,14 @@ Special thanks to Dr. Hyunseok Jung for the guidance throughout the semester.
 ---
 
 ## Poster
-[View PDF](assets/pdf/capstone_poster.pdf)
+[View PDF](/assets/pdf/capstone_poster.pdf)
 
-<embed src="assets/pdf/capstone_poster.pdf" type="application/pdf" width="100%" height="600px">
+<embed src="/assets/pdf/capstone_poster.pdf" type="application/pdf" width="100%" height="600px">
 
 ---
 
 ### Photo Gallery
 <p align="center">
-    <img src="assets/img/capstone.jpeg" width="500">
-    <img src="assets/img/capstone_with_drjung.jpeg" width="500">
+    <img src="/assets/img/capstone.jpeg" width="500">
+    <img src="/assets/img/capstone_with_drjung.jpeg" width="500">
 </p>
