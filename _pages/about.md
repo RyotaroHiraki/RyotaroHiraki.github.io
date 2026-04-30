@@ -6,7 +6,7 @@ subtitle: Ph.D. Student・Department of Education Reform, University of Arkansas
 
 profile:
   align: left
-  image: smile.jpg
+  image: profile.jpg
   image_circular: true # crops the image to make it circular
   more_info: false
 
