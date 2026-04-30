@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
-          },
         },{id: "dropdown-bookshelf",
               title: "bookshelf",
               description: "",
@@ -419,15 +412,15 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
             },},{id: "news-obtained-b-a-in-international-and-global-studies-with-latin-honors-from-the-university-of-arkansas",
           title: 'Obtained B.A. in International and Global Studies with Latin Honors from the University...',
           description: "",
-          section: "News",},{id: "news-obtained-m-s-in-economic-analytics-from-the-university-of-arkansas",
+          section: "News",},{id: "news-defended-my-capstone-project-for-m-s-in-economic-analytics",
+          title: 'Defended my capstone project for M.S. in Economic Analytics',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-obtained-m-s-in-economic-analytics-from-the-university-of-arkansas",
           title: 'Obtained M.S. in Economic Analytics from the University of Arkansas',
           description: "",
           section: "News",},{id: "projects-project-1",
