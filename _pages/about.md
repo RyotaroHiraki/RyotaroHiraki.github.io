@@ -29,9 +29,16 @@ homepage_badges:
     - label: Email
       icon: envelope
       url: mailto:rhiraki@uark.edu
+    - label: LinkedIn
+      icon: linkedin
+      url: https://www.linkedin.com/in/ryotaro-hiraki-economics-education-data-machine-learning/
     - label: Google Scholar
       icon: google-scholar
       url: https://scholar.google.com/citations?user=7Wu-aRYAAAAJ
+    - label: GitHub
+      icon: github
+      url: https://github.com/RyotaroHiraki?tab=repositories
+    - label: cv
   keywords:
     - Economics of Education
     - Education Policy
@@ -43,4 +50,4 @@ I am a Ph.D. student at the University of Arkansas's Department of Education Ref
 
 Before my Ph.D., I obtained an M.S. in Economic Analytics (2026) and a B.A. in International and Global Studies with Latin Honors (2025), both from the University of Arkansas.
 
----
+
