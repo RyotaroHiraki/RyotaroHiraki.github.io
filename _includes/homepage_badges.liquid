@@ -1,0 +1,54 @@
+<div class="homepage-badges">
+  <div class="homepage-badges__icons">
+    {% social_links %}
+  </div>
+
+  {% if site.keywords %}
+    <div class="homepage-badges__keywords">
+      {% assign homepage_keywords = site.keywords | split: ',' %}
+      {% for keyword in homepage_keywords %}
+        <span>{{ keyword | strip }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+<style>
+  .homepage-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background: var(--global-card-bg-color);
+  }
+
+  .homepage-badges__icons {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 1.2rem;
+  }
+
+  .homepage-badges__icons a {
+    color: var(--global-text-color);
+  }
+
+  .homepage-badges__keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .homepage-badges__keywords span {
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    color: var(--global-theme-color);
+    background: var(--global-bg-color);
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+</style>
