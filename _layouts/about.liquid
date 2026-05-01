@@ -40,6 +40,10 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    {% if page.homepage_badges and page.homepage_badges.enabled %}
+      {% include homepage_badges.liquid %}
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
