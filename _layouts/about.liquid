@@ -78,7 +78,9 @@ layout: default
 
     <!--contact note -->
     {% if site.contact_note %}
+    <div class='social'>
       <div class="contact-note">{{ site.contact_note }}</div>
+    </div>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
