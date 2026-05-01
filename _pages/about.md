@@ -22,6 +22,21 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+homepage_badges:
+  enabled: true
+  icons:
+    - label: Email
+      icon: envelope
+      url: mailto:rhiraki@uark.edu
+    - label: Google Scholar
+      icon: google-scholar
+      url: https://scholar.google.com/citations?user=7Wu-aRYAAAAJ
+  keywords:
+    - Economics of Education
+    - Education Policy
+    - Machine Learning
+
 ---
 
 I am a Ph.D. student at the University of Arkansas's Department of Education Reform, College of Education and Health Professions, advised by Dr. Harry Anthony Patrinos.
