@@ -10,14 +10,25 @@
   {% if page.homepage_badges.icons %}
     <div class="homepage-badges__icons">
       {% for item in page.homepage_badges.icons %}
-        <a href="{{ item.url }}" aria-label="{{ item.label }}" title="{{ item.label }}">
+        <a class="homepage-badges__link" href="{{ item.url }}" aria-label="{{ item.label }}" title="{{ item.label }}">
           {% if item.icon == 'google-scholar' %}
             <i class="ai ai-google-scholar"></i>
           {% elsif item.icon == 'envelope' %}
             <i class="fa-solid fa-envelope"></i>
+          {% elsif item.icon == 'github' %}
+            <i class="fa-brands fa-github"></i>
+          {% elsif item.icon == 'linkedin' %}
+            <i class="fa-brands fa-linkedin"></i>
+          {% elsif item.icon == 'x' or item.icon == 'x-twitter' or item.icon == 'twitter' %}
+            <i class="fa-brands fa-x-twitter"></i>
+          {% elsif item.icon == 'orcid' %}
+            <i class="ai ai-orcid"></i>
+          {% elsif item.icon == 'cv' or item.icon == 'file' %}
+            <i class="fa-regular fa-file-lines"></i>
           {% else %}
             <i class="{{ item.icon }}"></i>
           {% endif %}
+          <span>{{ item.label }}</span>
         </a>
       {% endfor %}
     </div>
@@ -29,27 +40,40 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.75rem;
+    gap: 0.9rem;
     margin: 1rem 0 1.5rem;
-    padding: 0.85rem 1rem;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 8px;
-    background: var(--global-card-bg-color);
   }
 
   .homepage-badges__icons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 0.65rem;
-    font-size: 1.25rem;
+    gap: 0.6rem;
   }
 
-  .homepage-badges__icons a {
+  .homepage-badges__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 2.35rem;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
     color: var(--global-text-color);
+    background: var(--global-card-bg-color);
+    font-size: 0.9rem;
+    line-height: 1;
   }
 
-  .homepage-badges__icons a:hover {
+  .homepage-badges__link:hover {
+    border-color: var(--global-theme-color);
     color: var(--global-theme-color);
+    text-decoration: none;
+  }
+
+  .homepage-badges__link i {
+    width: 1rem;
+    text-align: center;
   }
 
   .homepage-badges__keywords {
@@ -59,11 +83,20 @@
   }
 
   .homepage-badges__keywords span {
-    padding: 0.2rem 0.55rem;
+    padding: 0.25rem 0.65rem;
     border-radius: 999px;
     color: var(--global-theme-color);
-    background: var(--global-bg-color);
+    background: rgba(0, 123, 167, 0.16);
+    font-weight: 600;
     font-size: 0.85rem;
     line-height: 1.4;
+  }
+
+  .homepage-intro-header {
+    margin-bottom: 1.2rem;
+  }
+
+  .homepage-intro-header .post-title {
+    margin-bottom: 0.25rem;
   }
 </style>
