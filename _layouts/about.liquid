@@ -12,7 +12,6 @@ layout: default
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
-    {% include homepage_badges.liquid %}
   </header>
 
   <article>
@@ -35,6 +34,7 @@ layout: default
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
+        {% include homepage_badges.liquid %}
         {% endif %}
       </div>
     {% endif %}
