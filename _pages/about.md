@@ -38,7 +38,9 @@ homepage_badges:
     - label: GitHub
       icon: github
       url: https://github.com/RyotaroHiraki?tab=repositories
-    - label: cv
+    - label: CV
+      icon: cv
+      url: 
   keywords:
     - Economics of Education
     - Education Policy
