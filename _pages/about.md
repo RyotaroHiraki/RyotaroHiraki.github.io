@@ -40,7 +40,7 @@ homepage_badges:
       url: https://github.com/RyotaroHiraki?tab=repositories
     - label: CV
       icon: cv
-      url: 
+      url: https://ryotarohiraki.github.io/files/cv.pdf
   keywords:
     - Economics of Education
     - Education Policy
