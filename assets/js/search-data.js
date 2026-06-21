@@ -75,9 +75,9 @@ ninja.data = [{
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-returns-to-education-with-dml",
+          title: 'Returns to Education with DML',
+          description: "An independent research project with Dr. Patrinos",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-project-5",
