@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Returns to Education with DML
+description: An independent research project with Dr. Patrinos
+img: assets/img/lsus.jpeg
 importance: 3
-category: fun
+category: research
 ---
 
 Every project has a beautiful feature showcase page.
@@ -22,17 +22,17 @@ To give your project a background in the portfolio page, just add the img tag to
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/mvea.jpeg" title="MVEA oral presentation" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/aefp.JPG" title="AEFP poster presentation" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/lsus.jpeg" title="LSUS oral presentation" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Left: An oral presentation at MVEA annual meeting 2025 (Oct, 2025). Middle: A poster presentation at AEFP annual meeting 2026 (Mar, 2026). Right: An oral presentation at LSUS regional student scholars forum 2026 (Apr, 2026).
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
