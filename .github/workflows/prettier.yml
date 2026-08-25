@@ -17,19 +17,35 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+      - name: Setup pnpm 📦
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
-      - name: Install Prettier 💾
-        run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+        with:
+          node-version: "22"
+          cache: "pnpm"
+      - name: Install dependencies 💾
+        run: pnpm install --frozen-lockfile
       - name: Prettier Check 🔎
         id: prettier
-        run: npx prettier . --check
+        run: >
+          pnpm exec prettier
+          astro.config.mjs
+          "src/**/*.{astro,css,js,ts}"
+          "public/js/**/*.js"
+          "package.json"
+          "pnpm-workspace.yaml"
+          ".prettierrc"
+          ".github/workflows/*.yml"
+          --check
       - name: Create diff 📝
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: ${{ failure() }}
         run: |
-          npx prettier . --write
-          git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
+          pnpm exec prettier astro.config.mjs "src/**/*.{astro,css,js,ts}" "public/js/**/*.js" "package.json" "pnpm-workspace.yaml" ".prettierrc" ".github/workflows/*.yml" --write
+          git diff -- . ':(exclude)pnpm-lock.yaml' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
       - name: Upload html diff ⬆️

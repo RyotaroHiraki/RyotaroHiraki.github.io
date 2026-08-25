@@ -1,0 +1,324 @@
+---
+import "../styles/global.css";
+
+const news = [
+  ["May 9, 2026", "Obtained M.S. in Economic Analytics from the University of Arkansas."],
+  ["May 4, 2026", "A first-authored working paper is out in Annenberg EdExchange Ed Working Papers."],
+  ["Apr 30, 2026", "Awarded Doctoral Academy Fellowship by the University of Arkansas."],
+  ["Apr 24, 2026", "Defended my capstone project for M.S. in Economic Analytics."],
+  ["Apr 16, 2026", "A first-authored working paper is out in IZA."],
+  ["Apr 13, 2026", "A first-authored working paper is out in GLO."],
+  ["Apr 3, 2026", "Presented at the LSU Shreveport 11th Regional Student Scholars Forum (oral)."],
+  ["Mar 19, 2026", "Presented at AEFP conference (poster)."],
+  ["Oct 25, 2025", "Presented at Missouri Valley Economic Association Annual Meetings 2025 (oral)."],
+  ["May 10, 2025", "Obtained B.A. in International and Global Studies with Latin Honors from the University of Arkansas."],
+];
+
+const interests = ["Economics of Education", "Education Policy", "Machine Learning"];
+
+const projects = [
+  {
+    title: "Returns to Education with DML",
+    href: "#publications",
+    image: "/assets/img/mvea.jpeg",
+    alt: "MVEA oral presentation",
+    description:
+      "An independent research project comparing OLS and double machine learning methods for estimating returns to education in the United States.",
+    tags: ["Education", "DML"],
+  },
+  {
+    title: "College Proximity Instrument",
+    href: "/assets/pdf/capstone_poster.pdf",
+    image: "/assets/img/capstone.jpeg",
+    alt: "Capstone presentation",
+    description:
+      "M.S. capstone project on returns to education in the U.S. using a college proximity instrument, satellite imagery, and deep learning features.",
+    tags: ["Causal Inference", "Remote Sensing"],
+  },
+  {
+    title: "Conference Presentations",
+    href: "#news",
+    image: "/assets/img/aefp.JPG",
+    alt: "AEFP poster presentation",
+    description: "Recent presentations include AEFP 2026, LSU Shreveport 2026, and Missouri Valley Economic Association 2025.",
+    tags: ["AEFP", "MVEA"],
+  },
+  {
+    title: "Language and Student Achievement",
+    href: "#publications",
+    image: "/assets/img/lsus.jpeg",
+    alt: "LSUS oral presentation",
+    description: "Research on how language is associated with student achievement across countries.",
+    tags: ["Policy", "Achievement"],
+  },
+];
+
+const publications = [
+  {
+    year: "2026",
+    title: "Returns to Education in the United States: A Comparison of OLS and Double Machine Learning Methods",
+    authors: "Al Mansor Helal, Ryotaro Hiraki, Harry Anthony Patrinos",
+    venue: "GLO Discussion Paper",
+    image: "/assets/img/mvea.jpeg",
+    alt: "Presentation for returns to education project",
+  },
+  {
+    year: "2025",
+    title: "The Effect of Language on Student Achievement Across Countries",
+    authors: "Ryotaro Hiraki",
+    venue: "Working paper",
+    image: "/assets/img/lsus.jpeg",
+    alt: "Student achievement presentation",
+  },
+  {
+    year: "2025",
+    title: "Returns to Education in the United States: A Comparison of OLS and Double Machine Learning Methods",
+    authors: "Ryotaro Hiraki, Harry Anthony Patrinos",
+    venue: "Working paper",
+    image: "/assets/img/aefp.JPG",
+    alt: "AEFP poster presentation",
+  },
+];
+
+const education = [
+  "Ph.D. Student, Department of Education Reform, University of Arkansas",
+  "M.S. in Economic Analytics, University of Arkansas, 2026",
+  "B.A. in International and Global Studies with Latin Honors, University of Arkansas, 2025",
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryotaro Hiraki</title>
+    <meta
+      name="description"
+      content="Ryotaro Hiraki — Ph.D. student in Education Reform at the University of Arkansas. Research in economics of education, education policy, and machine learning."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo">Ryotaro <span>Hiraki</span></a>
+        <ul class="nav__links">
+          <li><a href="#news">News</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#more">More</a></li>
+        </ul>
+        <button class="nav__hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <section class="hero" id="about">
+          <img src="/assets/img/profile.jpeg" alt="Ryotaro Hiraki" class="hero__photo" />
+          <div class="hero__content">
+            <h1>Ryotaro Hiraki</h1>
+            <p class="tagline">Ph.D. Student &middot; Department of Education Reform, University of Arkansas</p>
+            <p class="bio">
+              I am a Ph.D. student at the University of Arkansas's
+              <a href="https://edre.uark.edu/" target="_blank" rel="noopener">Department of Education Reform</a>, College of Education and Health
+              Professions, advised by
+              <a href="https://edre.uark.edu/people/index/uid/hpatrino/name/Harry+Anthony+Patrinos/" target="_blank" rel="noopener">
+                Dr. Harry Anthony Patrinos</a
+              >.
+            </p>
+            <p class="bio">
+              Before my Ph.D., I obtained an M.S. in Economic Analytics (2026) and a B.A. in International and Global Studies with Latin Honors
+              (2025), both from the University of Arkansas.
+            </p>
+
+            <div class="interests">
+              {interests.map((interest) => <span class="interest-tag">{interest}</span>)}
+            </div>
+
+            <div class="hero__links">
+              <a class="icon-link" href="mailto:rhiraki@uark.edu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  ><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"
+                  ></polyline></svg
+                >
+                Email
+              </a>
+              <a class="icon-link" href="https://scholar.google.com/citations?user=7Wu-aRYAAAAJ" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"
+                  ><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"></path></svg
+                >
+                Scholar
+              </a>
+              <a class="icon-link" href="https://github.com/RyotaroHiraki?tab=repositories" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"
+                  ><path
+                    d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.21.69.82.57A12 12 0 0 0 12 .3"
+                  ></path></svg
+                >
+                GitHub
+              </a>
+              <a
+                class="icon-link"
+                href="https://www.linkedin.com/in/ryotaro-hiraki-economics-education-data-machine-learning/"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor"
+                  ><path
+                    d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"
+                  ></path></svg
+                >
+                LinkedIn
+              </a>
+              <a class="icon-link" href="/files/cv.pdf" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  ><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line
+                    x1="16"
+                    y1="13"
+                    x2="8"
+                    y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg
+                >
+                CV
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="news">
+          <h2 class="section-title">Recent News</h2>
+          <ul class="news-list">
+            {
+              news.map(([date, text]) => (
+                <li class="news-item">
+                  <span class="news-date">{date}</span>
+                  <span class="news-text">{text}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+
+        <section id="projects">
+          <h2 class="section-title">Latest Projects</h2>
+          <div class="carousel">
+            <button class="carousel__btn carousel__btn--prev" aria-label="Previous projects">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="carousel__track-container">
+              <div class="carousel__track">
+                {
+                  projects.map((project) => (
+                    <article class="project-card carousel__slide">
+                      <a
+                        href={project.href}
+                        target={project.href.startsWith("/") ? "_blank" : undefined}
+                        rel={project.href.startsWith("/") ? "noopener" : undefined}
+                        class="project-card__media"
+                      >
+                        <img src={project.image} alt={project.alt} />
+                      </a>
+                      <div class="project-card__body">
+                        <h3 class="project-card__title">
+                          <a href={project.href}>{project.title}</a>
+                        </h3>
+                        <p class="project-card__desc">{project.description}</p>
+                      </div>
+                      <div class="project-card__tags">
+                        {project.tags.map((tag) => (
+                          <span class="interest-tag">{tag}</span>
+                        ))}
+                      </div>
+                    </article>
+                  ))
+                }
+              </div>
+            </div>
+            <button class="carousel__btn carousel__btn--next" aria-label="Next projects">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+          <div class="carousel__dots" id="carouselDots"></div>
+        </section>
+
+        <section id="publications">
+          <h2 class="section-title">Publications</h2>
+          {
+            [...new Set(publications.map((pub) => pub.year))].map((year) => (
+              <div class="pub-year-group">
+                <h3 class="pub-year-heading">{year}</h3>
+                {publications
+                  .filter((pub) => pub.year === year)
+                  .map((pub) => (
+                    <article class="pub-card">
+                      <img src={pub.image} alt={pub.alt} class="pub-card__img" />
+                      <div>
+                        <h4 class="pub-card__title">{pub.title}</h4>
+                        <p class="pub-card__authors" set:html={pub.authors.replace("Ryotaro Hiraki", "<strong>Ryotaro Hiraki</strong>")} />
+                        <p class="pub-card__venue">{pub.venue}</p>
+                        <div class="pub-card__links">
+                          <a href="https://scholar.google.com/citations?user=7Wu-aRYAAAAJ" target="_blank" rel="noopener">
+                            Scholar
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  ))}
+              </div>
+            ))
+          }
+        </section>
+
+        <section id="more">
+          <h2 class="section-title">More</h2>
+          <div class="more-grid">
+            <div class="more-block">
+              <h3>Education</h3>
+              <ul>{education.map((item) => <li>{item}</li>)}</ul>
+            </div>
+            <div class="more-block">
+              <h3>Awards &amp; Honors</h3>
+              <ul>
+                <li>Doctoral Academy Fellowship, University of Arkansas, 2026</li>
+                <li>Latin Honors, University of Arkansas, 2025</li>
+              </ul>
+            </div>
+            <div class="more-block">
+              <h3>Research Interests</h3>
+              <ul>
+                <li>Economics of education</li>
+                <li>Education policy</li>
+                <li>Machine learning and causal inference</li>
+              </ul>
+            </div>
+            <div class="more-block">
+              <h3>Contact</h3>
+              <ul>
+                <li>Email: <a href="mailto:rhiraki@uark.edu">rhiraki@uark.edu</a></li>
+                <li>
+                  Google Scholar: <a href="https://scholar.google.com/citations?user=7Wu-aRYAAAAJ" target="_blank" rel="noopener">Ryotaro Hiraki</a>
+                </li>
+                <li>CV: <a href="/files/cv.pdf" target="_blank" rel="noopener">Download PDF</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">&copy; 2026 Ryotaro Hiraki &middot; Built with Astro.</div>
+    </footer>
+
+    <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <script src="/js/main.js" defer></script>
+  </body>
+</html>

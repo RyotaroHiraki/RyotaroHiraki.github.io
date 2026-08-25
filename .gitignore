@@ -1,5 +1,9 @@
 _site
+.astro
+dist
+.pnpm-store
 .bundle
+.DS_Store
 .DS_store
 .idea
 .jekyll-cache

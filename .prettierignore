@@ -1,6 +1,11 @@
 **/*.map
 **/*.min.css
 **/*.min.js
+.astro/
+dist/
+.pnpm-store/
+public/assets/
+public/files/
 assets/css/main.scss
 assets/js/distillpub/template.v2.js
 assets/js/search/*.js
