@@ -2,16 +2,130 @@
 import "../styles/global.css";
 
 const news = [
-  ["May 9, 2026", "Obtained M.S. in Economic Analytics from the University of Arkansas."],
-  ["May 4, 2026", "A first-authored working paper is out in Annenberg EdExchange Ed Working Papers."],
-  ["Apr 30, 2026", "Awarded Doctoral Academy Fellowship by the University of Arkansas."],
-  ["Apr 24, 2026", "Defended my capstone project for M.S. in Economic Analytics."],
-  ["Apr 16, 2026", "A first-authored working paper is out in IZA."],
-  ["Apr 13, 2026", "A first-authored working paper is out in GLO."],
-  ["Apr 3, 2026", "Presented at the LSU Shreveport 11th Regional Student Scholars Forum (oral)."],
-  ["Mar 19, 2026", "Presented at AEFP conference (poster)."],
-  ["Oct 25, 2025", "Presented at Missouri Valley Economic Association Annual Meetings 2025 (oral)."],
-  ["May 10, 2025", "Obtained B.A. in International and Global Studies with Latin Honors from the University of Arkansas."],
+  {
+    date: "Aug 17, 2026",
+    text: (
+      <>
+        🎓 Joined{" "}
+        <a href="https://edre.uark.edu/humancapitaledreturns.php" target="_blank" rel="noopener">
+          Human Capital & Education Returns Lab
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    date: "May 9, 2026",
+    text: <>🎓 Obtained M.S. in Economic Analytics from the University of Arkansas.</>,
+  },
+  {
+    date: "May 4, 2026",
+    text: (
+      <>
+        📎 A first-authored working paper is out in{" "}
+        <a href="https://files.eric.ed.gov/fulltext/ED681916.pdf" target="_blank" rel="noopener">
+          Annenberg EdExchange Ed Working Papers
+        </a>{" "}
+        thanks to{" "}
+        <a href="https://edre.uark.edu/people/faculty/uid/patrinos/name/Harry+Anthony+Patrinos/" target="_blank" rel="noopener">
+          Dr. Harry Patrinos
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    date: "Apr 30, 2026",
+    text: <>🏆 Awarded Doctoral Academy Fellowship by the University of Arkansas.</>,
+  },
+  {
+    date: "Apr 24, 2026",
+    text: (
+      <>
+        🎓 Defended my capstone project for M.S. in Economic Analytics. A huge thanks to{" "}
+        <a href="https://walton.uark.edu/departments/economics/directory/uid/hj020/name/Hyunseok+Jung/" target="_blank" rel="noopener">
+          Dr. Hyunseok Jung
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    date: "Apr 16, 2026",
+    text: (
+      <>
+        📎 A first-authored working paper is out in{" "}
+        <a
+          href="https://www.iza.org/publications/dp/18523/returns-to-education-in-the-united-states-a-comparison-of-ols-and-double-machine-learning-methods"
+          target="_blank"
+          rel="noopener"
+        >
+          IZA
+        </a>{" "}
+        thanks to{" "}
+        <a href="https://edre.uark.edu/people/faculty/uid/patrinos/name/Harry+Anthony+Patrinos/" target="_blank" rel="noopener">
+          Dr. Harry Patrinos
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    date: "Apr 13, 2026",
+    text: (
+      <>
+        📎 A first-authored working paper is out in{" "}
+        <a href="https://www.econstor.eu/bitstream/10419/339716/1/GLO-DP-1733.pdf" target="_blank" rel="noopener">
+          GLO
+        </a>{" "}
+        thanks to{" "}
+        <a href="https://edre.uark.edu/people/faculty/uid/patrinos/name/Harry+Anthony+Patrinos/" target="_blank" rel="noopener">
+          Dr. Harry Patrinos
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    date: "Apr 3, 2026",
+    text: (
+      <>
+        🗣️ Presented at the{" "}
+        <a href="https://www.lsus.edu/student-scholars-forum" target="_blank" rel="noopener">
+          LSU Shreveport 11th Regional Student Scholars Forum
+        </a>{" "}
+        (oral).
+      </>
+    ),
+  },
+  {
+    date: "Mar 19, 2026",
+    text: (
+      <>
+        🗣️ Presented at{" "}
+        <a href="https://aefpweb.org/" target="_blank" rel="noopener">
+          AEFP
+        </a>{" "}
+        conference (poster).
+      </>
+    ),
+  },
+  {
+    date: "Oct 25, 2025",
+    text: (
+      <>
+        🗣️ Presented at{" "}
+        <a href="https://www.mvea.net/" target="_blank" rel="noopener">
+          Missouri Valley Economic Association Annual Meetings 2025
+        </a>{" "}
+        (oral).
+      </>
+    ),
+  },
+  {
+    date: "May 10, 2025",
+    text: <>🎓 Obtained B.A. in International and Global Studies with Latin Honors from the University of Arkansas.</>,
+  },
 ];
 
 const interests = ["Economics of Education", "Education Policy", "Machine Learning"];
@@ -194,10 +308,10 @@ const education = [
           <h2 class="section-title">Recent News</h2>
           <ul class="news-list">
             {
-              news.map(([date, text]) => (
+              news.map((item) => (
                 <li class="news-item">
-                  <span class="news-date">{date}</span>
-                  <span class="news-text">{text}</span>
+                  <span class="news-date">{item.date}</span>
+                  <span class="news-text">{item.text}</span>
                 </li>
               ))
             }
